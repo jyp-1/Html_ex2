@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,39 +8,12 @@
 <link href="/Html_ex2/css/layout.css" rel="stylesheet">
 <link href="/Html_ex2/css/reset.css" rel="stylesheet">
 <script src="https://kit.fontawesome.com/a076d05399.js">
-	
 </script>
-<script type="text/javascript">
-	window.onload = function() {
-		
-		///all
-		var all = document.getElementById('all');
-		var ch = document.getElementsByClassName('ch');
-		all.addEventListener("click", function() {
-			for (var i = 0; i < ch.length; i++) {
-				ch[i].checked = this.checked;
-			}
-		})
-		
-		//button
-		var agree = document.getElementById('agree');
-		agree.addEventListener("click", function() {
-			if(all.checked||ch[0].checked){
-				alert("OK")
-				location.href="/Html_ex2/login/account2.jsp";
-			}else{
-				alert("약관에 동의하세요")
-				location.reload();
-			}
-		})
-		
-	}
-</script>
-
 </head>
 <body>
 
-	<!--header-->
+
+<!--header-->
 
 	<header>
 		<div class="header_wrap">
@@ -63,8 +36,7 @@
 				<ul>
 					<li id="menu_name"><a href="#" id="mi">Menu</a></li>
 					<li id="menu_name"><a href="#" id="mi">Store</a></li>
-					<li id="menu_name"><a href="/Html_ex2/write/writelist.jsp"
-						id="mi">story</a></li>
+					<li id="menu_name"><a href="/Html_ex2/write/writelist.jsp" id="mi">story</a></li>
 					<li id="menu_name"><a href="/Html_ex2/login/login.jsp" id="mi">Join</a></li>
 				</ul>
 			</div>
@@ -79,51 +51,24 @@
 		<div class="img">
 			<a href="#"><img alt="macMain" src="/Html_ex2/images/store.jpg"></a>
 		</div>
-
-
-
-		<div class="account">
-			<div class="ac_icon">
-				<img alt="" src="/Html_ex2/images/apply2.png" id="ap1"> <img
-					alt="" src="/Html_ex2/images/apply.png"> <img alt=""
-					src="/Html_ex2/images/apply3.png">
-			</div>
-
-			<h1>회원가입 및 약관동의</h1>
-			<br> <br>
-			<p>
-				모두 동의<input type="checkbox" id="all">
-			</p>
-			<hr>
-			<br>
-
-			<p>
-				회원으로 가입을 원하실 경우,개인정보 수집 동의에 대한 <br> 안내를 읽고 동의여부를 선택하여 주시기 바랍니다.
-
-				<br> <br> 개인정보 수집 동의(필수)<input type="checkbox" class="ch"><br>
-				<br>
-			</p>
-
-			<hr>
-			<br>
-
-			<p>
-				마케팅 수신에 대해서 동의를 하지 않아도 회원가입이 가능합니다. <br> 단, 각종 이벤트 응모 및 DM발송
-				서비스 등 마케팅 활동에 제한될 수 있음을 알려드립니다. <br> <br> 마케팅 수신 동의(선택)<input
-					type="checkbox" class="ch"><br> <br>
-			</p>
-
-
-			<hr>
-
-
-			<p><button id="agree">OK</button></p>
-
+		<div class="ac_icon">
+			<img alt="" src="/Html_ex2/images/apply2.png" >
+			<img alt="" src="/Html_ex2/images/apply.png">
+			<img alt="" src="/Html_ex2/images/apply3.png" id="ap1">
 		</div>
+		
+	<div class="ad_suc">
+			<div><h1>Congratulation! New Account</h1></div>
+			<div id="ad_suc_box1"><a href="/Html_ex2/index.jsp">Main</a></div>
+			<div id="ad_suc_box2"><a href="/Html_ex2/login/login.jsp">Login</a></div>
+	
+	</div>
+
+</section>
 
 
 
-	</section>
+
 
 
 	<!--aside-->
@@ -166,6 +111,19 @@
 
 
 	</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

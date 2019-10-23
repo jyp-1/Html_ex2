@@ -9,42 +9,6 @@
 <link href="/Html_ex2/css/reset.css" rel="stylesheet">
 <script src="https://kit.fontawesome.com/a076d05399.js">
 </script>
-<script type="text/javascript">
-	function go() {
-		var log1 = document.getElementById("log1").value;
-		var log2 = document.getElementById("log2").value;
-		if(log1&&log2 !=''){
-			alert("ok");
-			
-		}else{
-			alert("입력하세요");
-		}
-	}
-	
-	
-	function go2(){
-		var log1 = document.getElementById("log1").value;
-		var log2 = document.getElementById("log2").value;
-		var idresult = document.getElementById("idresult");
-		var pwresult = document.getElementById("pwresult");
-		if(log1 ==''){
-			
-			idresult.innerText="id는 필수입니다.";
-		}else{
-		}
-		if(log2 == ''){
-			pwresult.innerText="pw는 필수입니다.";
-		}else{
-		}
-		
-		return false;
-	}
-	
-	
-	
-	
-	
-</script>
 </head>
 <body>
 
@@ -75,7 +39,6 @@
 
 </header>
 
-
 <!--section-->
 
 <section>
@@ -83,32 +46,9 @@
 			<a href="#"><img alt="macMain" src="/Html_ex2/images/store.jpg"></a>
 		</div>
 		
-		<div class="sec_contain">
-			<div class="log">
-				<p id="lgbox">Login</p>
-				
-				<form action="/Html_ex2/index.jsp">
-				<p><input type ="text" placeholder="     ID를 입력하세요" id= "log1"></p>
-				<div id="idresult"></div>
-				
-				<p><input type ="text" placeholder="     PW를 입력하세요" id= "log2"></p>
-				<div id= "pwresult"></div>
-				
-				<p><button onclick="return go2()">Login</button></p>
-				<!-- <p><input type ="submit" value="login" id="log3"></p> -->
-				<p><input type="button" value="login" onclick="go()"></p>
-				
-				
-				
-				</form>
-				
-				<br>
-				<br>
-				<br>
-				<hr>
-			</div>
-		</div>
 </section>
+
+
 
 
 
@@ -148,11 +88,6 @@
 
 
 </footer>
-
-
-
-
-
 
 
 

@@ -1,162 +1,156 @@
 @charset "UTF-8";
 
 /****************************************************************************header*****/
-header{
+header {
 	width: 100%;
 	height: 140px;
-	background-color:white;
+	background-color: white;
 	position: fixed;
-	top:0px;
+	top: 0px;
 }
 
-.header_wrap{
-	width:70%;
+.header_wrap {
+	width: 70%;
 	height: 140px;
 	margin: 0 auto;
-		
 }
-.headerLogo{
+
+.headerLogo {
 	margin-top: 28px;
 	float: left;
 	margin-left: 70px;
 }
 
-.header_menu{
-	
-	width:50%;
-	height:100%;
-	float: left;
-	margin-left:90px;
-	}
-
-.utill{
-	width: 16%;
+.header_menu {
+	width: 50%;
 	height: 100%;
-	margin-right:50px;
-	float:right;
+	float: left;
+	margin-left: 90px;
 }
 
-#menu_name{
-	float:left;
+.utill {
+	width: 16%;
+	height: 100%;
 	margin-right: 50px;
-	margin-left:68px;
-	line-height:140px;
+	float: right;
+}
+
+#menu_name {
+	float: left;
+	margin-right: 50px;
+	margin-left: 68px;
+	line-height: 140px;
 	font-weight: bold;
 	color: #292929;
-	font-size: 20px;	
+	font-size: 20px;
 	font-family: Malgun sans-serif;
 }
 
-
-#ENG{
-	float:left;
+#ENG {
+	float: left;
 	font-weight: bold;
 	font-size: 13px;
 	margin-left: 26px;
-	margin-top:55px;
+	margin-top: 55px;
 	background-color: #264a36;
-	font-weight:bold;
-	color:white;
+	font-weight: bold;
+	color: white;
 	width: 80px;
-	height:36px;
+	height: 36px;
 	border-radius: 48px;
 	text-align: center;
 	line-height: 36px;
-	
-	
 }
 
-#search{
+#search {
 	float: left;
 	margin-left: 35px;
 	margin-top: 52px;
 }
 
-
-#mi{
+#mi {
 	color: black;
 	text-decoration: none;
 }
 /*******************************************************************************section***/
-
-section{
+section {
 	width: 100%;
 	min-height: 1811px;
 	background-color: white;
 }
 
-.img{
-	width:100%;
+.img {
+	width: 100%;
 	overflow: hidden;
 	margin-top: 140px;
-		
 }
 
-.sec_contain{
+.sec_contain {
 	width: 63%;
-	height: 1181px;
+	height: 1000px;
 	margin: 0 auto;
+	background-color: white;
 }
 
-.macLive{
-	width:63%;
-	height:40px;
-	background-color: white;
-	margin-top: 40px;
-	font-size: 22px;
+.macLive {
+	width: 61%;
+	height: 40px;
+	font-size: 40px;
 	font-weight: bold;
-	padding-top: 0px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	margin-top: 20px;
+
+	
+	
 	
 }
 
-
-.log{
+/*******************Login**************************************/
+.log {
 	width: 63%;
 	height: 500px;
 	background-color: white;
 	margin: 0 auto;
 	margin-top: 200px;
-	
 }
 
-#log1{
-	width:300px;
-	height:50px;
+#log1 {
+	width: 300px;
+	height: 50px;
 	line-height: 50px;
-	background-color:lightgray;
-	margin-top: 100px;
-	margin-left: 25%;
+	background-color: #F5F5F5;
+	margin-top: 90px;
+	margin-left: 27%;
 	border-style: none;
 	border-radius: 47px;
-	
 }
-#log2{
-	width:300px;
-	height:50px;
+
+#log2 {
+	width: 300px;
+	height: 50px;
 	line-height: 50px;
-	background-color:lightgray;
+	background-color: #F5F5F5;
 	top: 300px;
 	margin-top: 30px;
-	margin-left: 25%;
+	margin-left: 27%;
 	border-style: none;
 	border-radius: 47px;
-	
 }
 
-#log3{
-	width:100px;
-	height:50px;
+#log3 {
+	width: 100px;
+	height: 50px;
 	line-height: 50px;
-	background-color:lightgray;
+	background-color: #ffbc0d;
 	top: 400px;
 	margin-top: 60px;
 	margin-left: 60%;
 	border-style: none;
-	border-radius: 10px;
-	
+	border-radius: 40px;
 }
 
-#lgbox{
+#lgbox {
 	width: 250px;
 	height: 100px;
 	background-color: white;
@@ -164,276 +158,386 @@ section{
 	line-height: 100px;
 	font-size: 30px;
 	font-weight: bold;
-	
 }
 
-.account{
+/******************************************************************account,account2***********/
+.account {
 	width: 800px;
 	height: 600px;
 	margin: 0 auto;
-	margin-top: 300px;
+	margin-top: 200px;
 	font-size: 18px;
 	font-weight: bold;
 	text-align: justify;
-	
 }
 
-#agree{
-	width: 250px;
-	height: 100px;
-	background-color: lighgray;
-	padding-left: 600px;
-	line-height: 100px;
-	font-size:19px;
-	font-weight: bold;
+#agree {
+	width: 80px;
+	height: 40px;
+	background-color: #ffbc0d;
+	float: right;
+	line-height: 40px;
+	text-align: center;
+	margin-top: 10px;
+	border-radius: 40px;
+	border-style: none;
 }
-/**********************************************************section 가운데 부분*****/
-.sec_contain2{
-	
-	width:100%;
-	height: 946px;
-	background-color:white;
+
+.ac_icon{
+	width: 500px;
+	height: 150px;
 	margin: 0 auto;
-	margin-top: 40px;
+	margin-top: 150px;
 }
 
 
-#dt1{
-	width: 366px;
-	height: 108px;
-	background-color: white;
-	float: left;
-	margin-left: 25px;
-	text-align: justify;
-	font-size: 18px;
+#ap1{
+	width: 140px;
+	height: 140px;
+	background-color: #ffbc0d;
+	border-radius: 100px;
+}
+
+.account_form {
+	width: 800px;
+	height: 800px;
+	margin: 0 auto;
+	margin-top: 0px;
+	border-radius: 20px;
+}
+
+.account_form2 {
+	width: 500px;
+	height: 600px;
+	margin: 0 auto;
+}
+
+#ac_join {
+	width: 100px;
+	height: 50px;
+	margin-left: 30px;
+}
+
+#ac_box {
+	width: 300px;
+	height: 30px;
+	margin: 0 auto;
+	margin-top: 10px;
+	border-style: none;
+	border-radius: 20px;
+	background-color: #F5F5F5;
+}
+
+#ac_bt {
+	width: 70px;
+	height: 30px;
+	border-style: none;
+	border-radius: 20px;
+	margin-left: 20px;
 	font-weight: bold;
+	background-color: #F5F5F5;
+}
+
+#ac_ok {
+	width: 100px;
+	height: 40px;
+	background-color: #ffbc0d;
+	margin-left: 550px;
+	margin-top: 70px;
+	border-radius: 20px;
+}
+
+#ok {
+	text-align: center;
+	line-height: 40px;
+	font-weight: bold;
+}
+/***********************************************************accountsuccess****/
+.ad_suc {
+	width: 800px;
+	height: 500px;
+	margin: 0 auto;
+	margin-top: 0px;
+	text-align: center;
+}
+
+#ad_suc_box1 {
+	width: 100px;
+	height: 50px;
+	background-color: #ffbc0d;
+	border-radius: 20px;
+	float: left;
+	text-align: center;
+	line-height: 50px;
+	margin-left: 270px;
+	margin-right: 60px;
+	margin-top: 100px;
+	font-weight: bold;
+	float: left;
+}
+
+#ad_suc_box2 {
+	width: 100px;
+	height: 50px;
+	background-color: #ffbc0d;
+	border-radius: 20px;
+	float: left;
+	text-align: center;
+	line-height: 50px;
+	margin-top: 100px;
+	font-weight: bold;
+}
+
+/**********************************************************write,writelist*******/
+.tname {
+	text-align: left;
+	padding-top: 50px;
+	padding-left: 20px;
+	font-size: 20px;
+}
+
+.t1 {
+	width: 100%;
+	border: 1px black;
+	border-spacing: 0px;
+	border-collapse: separate;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+td {
+	width: 26px;
+	height: 80px;
+	color: black;
+	border-bottom: 1px solid gray;
+	background-color: #F5F5F5;
+	text-align: center;
+	font-weight: bold;
+}
+
+.t2 {
+	text-align: left;
+}
+
+.t3 {
+	color: gray;
+}
+
+.s_image {
+	float: right;
+}
+
+.search2 {
+	width: 27%;
+	height: 52px;
+	float: right;
+}
+
+.search_box {
+	width: 80%;
+	height: 50px;
+	border: 1px solid #d1d1d1;
+	border-radius: 40px;
+}
+
+.go_write {
+	width: 8%;
+	height: 30px;
+	background-color: #F5F5F5;
+	float: right;
+	border: 1px solid #d1d1d1;
+	margin-top: 10px;
+	border-radius: 20px;
+	text-align: center;
+	line-height: 30px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+h1 {
+	margin-top: 150px;
+	margin-bottom: 50px;
+}
+
+.tform {
+	width: 100%;
+	height: 700px;
+	background-color: white;
+}
+
+.tform1 {
+	width: 200px;
+	height: 70px;
+	font-size: 19px;
+	text-align: justify;
+	line-height: 100px;
+	font-weight: bold;
+}
+
+.tform2 {
+	width: 200px;
+	height: 70px;
+	font-size: 19px;
+	text-align: justify;
+	line-height: 100px;
+	font-weight: bold;
+}
+.tform3{
+	width: 100px;
+	height: 50px;
+	background-color: #ffbc0d;
+	text-align: center;
+	margin: 0 auto;
+	line-height: 50px;
+	border-radius: 40px;
+	font-weight: bold;
+}
+
+.writetext {
+	width: 60%;
+	height: 50px;
+	margin-left: 100px;
+	background-color: #F5F5F5;
+	border-radius: 20px;
+	border-style: none;
+}
+
+.writetext2 {
+	width: 80%;
+	height: 400px;
+	margin-left: 100px;
+	background-color: #F5F5F5;
+	border-radius: 20px;
+	border-style: none;
+}
+
+/**********************************************************section 가운데 부분*****/
+.sec_contain2 {
+	width: 100%;
+	height: 946px;
+	margin: 0 auto;
+	background-color: white;
+}
+
+.sec_contain2_con{
+	width: 366px;
+	height: 438px;
+	border:none;
+	border-radius:10px;
+	float:left;
+	margin-left: 30px;
+	margin-top: 20px;
+}
+
+.contain2_img{
+	width: 100%;
+	height: 310px;
+	float: left;
 	
+}
+
+.contain2_text{
+	width: 100%;
+	height: 120px;
+	float: left;
+}
+
+#con_text_box{
+	width: 100%;
+	height: 70px;
+	background-color: white;
+	text-align: justify;
+	margin-top: 20px;
+	line-height: 25px;
+	font-weight: bold;
+	font-size: 18px;
 	
-	
 }
-#dt2{
-	width: 366px;
-	height: 108px;
-	background-color: white;
-	float: left;
-	margin-left: 25px;
-	text-align: justify;
-	font-size: 18px;
-	font-weight: bold;
-}
-#dt3{
-	width: 366px;
-	height: 108px;
-	background-color: white;
-	float: left;
-	margin-left: 25px;
-	text-align: justify;
-	font-size: 18px;
-	font-weight: bold;
-}
-#dt4{
-	width: 366px;
-	height: 108px;
-	background-color: white;
-	float: left;
-	margin-left: 25px;
-	text-align: justify;
-	font-size: 18px;
-	font-weight: bold;
-}
-#dt5{
-	width: 366px;
-	height: 108px;
-	background-color: white;
-	float: left;
-	margin-left: 25px;
-	text-align: justify;
-	font-size: 18px;
-	font-weight: bold;
-}
-#dt6{
-	width: 366px;
-	height: 108px;
-	background-color: white;
-	float: left;
-	margin-left: 25px;
-	text-align: justify;
-	font-size: 18px;
-	font-weight: bold;
-}
-
-#dt1 >div{
-		width: 366px;
-		height: 80px;
-		margin-top: 20px;
-		margin-left: 20px;
-}
-#dt2 >div{
-		width: 366px;
-		height: 80px;
-		margin-top: 20px;
-		margin-left: 20px;
-}
-#dt3 >div{
-		width: 366px;
-		height: 80px;
-		margin-top: 20px;
-		margin-left: 20px;
-}
-#dt4 >div{
-		width: 366px;
-		height: 80px;
-		margin-top: 20px;
-		margin-left: 20px;
-}
-#dt5 >div{
-		width: 366px;
-		height: 80px;
-		margin-top: 20px;
-		margin-left: 20px;
-}
-#dt6 >div{
-		width: 366px;
-		height: 80px;
-		margin-top: 20px;
-		margin-left: 20px;
-}
-
-#d1{
-	width: 366px;
-	height: 300px;
-	background-color: white;
-	float: left;
-	margin-left: 25px;
-}
-#d2{
-	width: 366px;
-	height: 300px;
-	background-color: white;
-	float: left;
-	margin-left: 25px;
-}
-#d3{
-	width: 366px;
-	height: 300px;
-	background-color: white;
-	float: left;
-	margin-left: 25px;
-}
-
-#d4{
-	width: 366px;
-	height: 300px;
-	background-color: white;
-	float: left;
-	margin-left: 25px;
-	margin-top: 35px;
-}
-#d5{
-	width: 366px;
-	height: 300px;
-	background-color: white;
-	float: left;
-	margin-left: 25px;
-	margin-top: 35px;
-}
-#d6{
-	width: 366px;
-	height: 300px;
-	background-color: white;
-	float: left;
-	margin-left: 25px;
-	margin-top: 35px;
-}
-
 
 
 /********************************************************메인 하단**************/
-.bt{
-	padding-left: 500px;
+.bt {
+	width: 90px;
+	height: 90px;
+	margin-left: 900px;
+	margin-bottom: 20px;
+	
 }
 
 /*********************************************************aside******************/
-
-#as1{
+#as1 {
 	width: 110px;
 	height: 110px;
 	top: 500px;
 	right: 0px;
 	position: fixed;
-	margin-right: 200px;	
+	margin-right: 200px;
 }
-#as2{
+
+#as2 {
 	width: 110px;
 	height: 110px;
 	top: 800px;
 	right: 0px;
-	position: fixed;	
-	margin-right: 200px;	
+	position: fixed;
+	margin-right: 200px;
 }
 
 /*******************************************************************************footer***/
-
-footer{
+footer {
 	width: 100%;
 	height: 230px;
-	background-color:#292929;
+	background-color: #292929;
 	overflow: hidden;
-	
 }
 
-.foot_wrap{
-	
-	width:70%;
+.foot_wrap {
+	width: 70%;
 	height: 130px;
 	margin: 0 auto;
 	margin-top: 50px;
-	
 }
 
-.foot_util{
-	
-	width:21%;
-	height:130px; 
-	float: left;
-	
-}
-
-.foot_info{
-	width:50%;
-	height:130px; 
+.foot_util {
+	width: 21%;
+	height: 130px;
 	float: left;
 }
 
-.foot_util > li{
+.foot_info {
+	width: 50%;
+	height: 130px;
+	float: left;
+}
+
+.foot_util>li {
 	font-weight: bold;
 	font-size: 14px;
-	color:white;
+	color: white;
 	margin-left: 70px;
 	line-height: 26px;
 }
-.foot_info > li{
+
+.foot_info>li {
 	font-size: 14px;
-	color:gray;
+	color: gray;
 	font-weight: bold;
 	line-height: 26px;
 }
 
-.icon{
-float: right;
-margin-right: 60px;
+.icon {
+	float: right;
+	margin-right: 60px;
 }
 
-.icon >li{
+.icon>li {
 	float: left;
-	color:white;
+	color: white;
 	font-size: 35px;
-	margin-left:30px;
-	
+	margin-left: 30px;
 }
 
-#i1{
+#i1 {
 	color: white;
 	text-decoration: none;
 }
-

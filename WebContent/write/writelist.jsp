@@ -10,35 +10,10 @@
 <script src="https://kit.fontawesome.com/a076d05399.js">
 	
 </script>
-<script type="text/javascript">
-	window.onload = function() {
-		
-		///all
-		var all = document.getElementById('all');
-		var ch = document.getElementsByClassName('ch');
-		all.addEventListener("click", function() {
-			for (var i = 0; i < ch.length; i++) {
-				ch[i].checked = this.checked;
-			}
-		})
-		
-		//button
-		var agree = document.getElementById('agree');
-		agree.addEventListener("click", function() {
-			if(all.checked||ch[0].checked){
-				alert("OK")
-				location.href="/Html_ex2/login/account2.jsp";
-			}else{
-				alert("약관에 동의하세요")
-				location.reload();
-			}
-		})
-		
-	}
-</script>
-
 </head>
 <body>
+
+
 
 	<!--header-->
 
@@ -80,51 +55,64 @@
 			<a href="#"><img alt="macMain" src="/Html_ex2/images/store.jpg"></a>
 		</div>
 
+		<div class="sec_contain">
+			<div class="tname">
+				<h1>Our Story</h1>
+				<br>
+				<div>
+					<h4>총 6개의 글이 있습니다.</h4>
+				</div>
+				<div class="search2">
+					<img alt="" src="/Html_ex2/images/bt_search.png" class="s_image">
+					<div>
+						<input type="text" class="search_box">
+					</div>
+				</div>
+			</div>
+			<br>
+			<div>
+				<table class="t1">
+					<tr>
+						<td class="t3">6</td>
+						<td class="t2">맥도날드, '맥올데이' 누적판매량 7천만 세트 돌파</td>
+						<td class="t3">2019-10-21</td>
+					</tr>
+					<tr>
+						<td class="t3">5</td>
+						<td class="t2">맥도날드, 일학습병행 활성화위해 대학, 고교와 다자 협약 체결</td>
+						<td class="t3">2019-10-20</td>
+					</tr>
+					<tr>
+						<td class="t3">4</td>
+						<td class="t2">국내 1호 로날드 맥도날드 하우스 탄생</td>
+						<td class="t3">2019-10-19</td>
+					</tr>
+					<tr>
+						<td class="t3">3</td>
+						<td class="t2">맥도날드 상암DMC점에 '주한 태국대사'가 방문한 이유는</td>
+						<td class="t3">2019-10-18</td>
+					</tr>
+					<tr>
+						<td class="t3">2</td>
+						<td class="t2">맥도날드, 추석 다음날 햄버거 제일 많이 먹는다</td>
+						<td class="t3">2019-10-17</td>
+					</tr>
+					<tr class="tr_bt">
+						<td class="t3">1</td>
+						<td class="t2">맥도날드 '빅맥 소스' 드디어 한국에도 상륙!</td>
+						<td class="t3">2019-10-16</td>
+					</tr>
+				</table>
 
-
-		<div class="account">
-			<div class="ac_icon">
-				<img alt="" src="/Html_ex2/images/apply2.png" id="ap1"> <img
-					alt="" src="/Html_ex2/images/apply.png"> <img alt=""
-					src="/Html_ex2/images/apply3.png">
+				<div class="go_write">
+					<a href="/Html_ex2/write/write.jsp">Write</a>
+				</div>
 			</div>
 
-			<h1>회원가입 및 약관동의</h1>
-			<br> <br>
-			<p>
-				모두 동의<input type="checkbox" id="all">
-			</p>
-			<hr>
-			<br>
-
-			<p>
-				회원으로 가입을 원하실 경우,개인정보 수집 동의에 대한 <br> 안내를 읽고 동의여부를 선택하여 주시기 바랍니다.
-
-				<br> <br> 개인정보 수집 동의(필수)<input type="checkbox" class="ch"><br>
-				<br>
-			</p>
-
-			<hr>
-			<br>
-
-			<p>
-				마케팅 수신에 대해서 동의를 하지 않아도 회원가입이 가능합니다. <br> 단, 각종 이벤트 응모 및 DM발송
-				서비스 등 마케팅 활동에 제한될 수 있음을 알려드립니다. <br> <br> 마케팅 수신 동의(선택)<input
-					type="checkbox" class="ch"><br> <br>
-			</p>
-
-
-			<hr>
-
-
-			<p><button id="agree">OK</button></p>
+			<div></div>
 
 		</div>
-
-
-
 	</section>
-
 
 	<!--aside-->
 
@@ -166,9 +154,6 @@
 
 
 	</footer>
-
-
-
 
 </body>
 </html>
