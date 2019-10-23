@@ -180,7 +180,12 @@ section {
 	text-align: center;
 	margin-top: 10px;
 	border-radius: 40px;
-	border-style: none;
+	border: hidden;
+}
+#check_all_agree{
+	width: 100px;
+	height: 50px;
+	
 }
 
 .ac_icon{

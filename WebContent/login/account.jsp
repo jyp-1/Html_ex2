@@ -91,9 +91,6 @@
 
 			<h1>회원가입 및 약관동의</h1>
 			<br> <br>
-			<p>
-				모두 동의<input type="checkbox" id="all">
-			</p>
 			<hr>
 			<br>
 
@@ -114,7 +111,11 @@
 			</p>
 
 
-			<hr>
+			<hr><br>
+			
+			<p id="check_all_agree">
+				모두 동의<input type="checkbox" id="all">
+			</p><br>
 
 
 			<p><button id="agree">OK</button></p>
