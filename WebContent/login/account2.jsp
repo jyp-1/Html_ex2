@@ -9,23 +9,67 @@
 <link href="/Html_ex2/css/reset.css" rel="stylesheet">
 <script src="https://kit.fontawesome.com/a076d05399.js">
 </script>
-<script type="text/javascript">
-		
-		var pw1 = document.getElementById("pw1");
-		var pw2 = document.getElementById("pw2");
-		
-		pw1.addEventListener("blur", function() {
-			
-		});
-		
 
-
-</script>
 </head>
 <body>
 
+		<!-- pw, 재확인,id,전화번호,이메일  스크립트 -->
+		
+		<script type="text/javascript">
+		/* pw 스크립트 */
+		window.onload = function() {
+			
+		var pw1 = document.getElementById("pw1");
+		var pw2 = document.getElementById("pw2");
+		var pwresult =document.getElementById("pwresult");
+		var pwOk=document.getElementById("pwOk");
+		var flag =false;
+		
+		
+		
+		pw1.addEventListener("blur", function() {
+			var info = this.value;
+			var ch = check(info);
+			pwresult.innerHTML="비밀번호를 8자리 이상 써주세요";
+			if(ch){
+				pwresult.innerHTML="확인되었습니다.";
+			}
+		});
+		
+		function check(info){
+			
+			if(info.length>7){
+				return true;
+			}else{
+				return false;
+			}
+		}
+		
+		/* pw 재확인 스크립트 */
+		
+		pw1.addEventListener("change", function() {
+			pw2.value="";
+			flag=false;
+			pwOk.innerHTML="";
+		});
+		
+		pw2.addEventListener("blur", function() {
+			var msg= "비밀번호가 일치하지 않습니다."
+			if(pw1.value==pw2.value){
+				msg="비밀번호가 일치합니다.";
+				flag = true;
+			}else{
+				flag=false;
+			}
+			pwOk.innerHTML=msg;
+		});
+		
+		}
 
-
+		</script>
+		
+		
+		
 	<!--header-->
 
 	<header>
@@ -93,15 +137,21 @@
 				<div>
 					<h3>PW</h3>
 					<input type="text" class="ac_box" id="pw1">
+					<div id="pwresult"></div>
 				</div>
 				<br>
+				
+				
+		
+		<!-- pw 재확인 시작 -->
 
 				<div>
 					<h3>PW</h3>
 					<input type="text" class="ac_box" id="pw2">
+					<div id="pwOk"></div>
 				</div>
 				<br>
-
+				
 				<div>
 					<h3>AGE</h3>
 					<input type="text" class="ac_box">
