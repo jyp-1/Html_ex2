@@ -223,7 +223,7 @@ section {
 	margin-left: 30px;
 }
 
-#ac_box {
+.ac_box {
 	width: 300px;
 	height: 30px;
 	margin: 0 auto;

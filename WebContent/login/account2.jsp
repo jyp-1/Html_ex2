@@ -8,7 +8,18 @@
 <link href="/Html_ex2/css/layout.css" rel="stylesheet">
 <link href="/Html_ex2/css/reset.css" rel="stylesheet">
 <script src="https://kit.fontawesome.com/a076d05399.js">
-	
+</script>
+<script type="text/javascript">
+		
+		var pw1 = document.getElementById("pw1");
+		var pw2 = document.getElementById("pw2");
+		
+		pw1.addEventListener("blur", function() {
+			
+		});
+		
+
+
 </script>
 </head>
 <body>
@@ -74,44 +85,44 @@
 			<div class="account_form2">
 				<div>
 					<h3>ID</h3>
-					<input type="text" id="ac_box"> <input type="button"
+					<input type="text" class="ac_box"> <input type="button"
 						id="ac_bt" value="Duplicate">
 				</div>
 				<br>
 
 				<div>
 					<h3>PW</h3>
-					<input type="text" id="ac_box">
+					<input type="text" class="ac_box" id="pw1">
 				</div>
 				<br>
 
 				<div>
 					<h3>PW</h3>
-					<input type="text" id="ac_box">
+					<input type="text" class="ac_box" id="pw2">
 				</div>
 				<br>
 
 				<div>
 					<h3>AGE</h3>
-					<input type="text" id="ac_box">
+					<input type="text" class="ac_box">
 				</div>
 				<br>
 
 				<div>
 					<h3>E-mail</h3>
-					<input type="text" id="ac_box">
+					<input type="text" class="ac_box">
 				</div>
 				<br>
 
 				<div>
 					<h3>PHONE</h3>
-					<input type="text" id="ac_box">
+					<input type="text" class="ac_box">
 				</div>
 				<br>
 
 				<div>
 					<h3>F/M</h3>
-					<select id="ac_box">
+					<select class="ac_box">
 						<option>Female</option>
 						<option>Male</option>
 					</select>
