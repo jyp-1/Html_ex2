@@ -7,16 +7,16 @@
 <title>Insert title here</title>
 <link href="./css/layout.css" rel="stylesheet">
 <link href="./css/reset.css" rel="stylesheet">
-<script src="https://kit.fontawesome.com/a076d05399.js">
-	
+<script src="https://kit.fontawesome.com/a076d05399.js">	
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 </head>
 <body>
 
 
 
-	<!--header-->
+<!--header-->
 
 	<header>
 		<div class="header_wrap">
@@ -43,6 +43,7 @@
 						id="mi">story</a></li>
 					<li id="menu_name"><a href="/Html_ex2/login/login.jsp" id="mi">Join</a></li>
 				</ul>
+				
 			</div>
 
 		</div>

@@ -7,8 +7,7 @@
 <title>Insert title here</title>
 <link href="/Html_ex2/css/layout.css" rel="stylesheet">
 <link href="/Html_ex2/css/reset.css" rel="stylesheet">
-<script src="https://kit.fontawesome.com/a076d05399.js">
-</script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 </head>
 <body>
@@ -23,10 +22,82 @@
 		var pw2 = document.getElementById("pw2");
 		var pwresult =document.getElementById("pwresult");
 		var pwOk=document.getElementById("pwOk");
+		var id = document.getElementById("id");
+		var email =document.getElementById("email");
+		var ph =document.getElementById("ph");
 		var flag =false;
 		
+	/* 	Id */
+		id.addEventListener("blur", function(){
+			var idif = this.value;
+			var idc = idch(idif);
+			
+			if(idc){
+				alert("OK");
+			}else{
+				alert("아이디는 두글자 이상입니다.");
+			}
+		});
 		
 		
+		function idch(idif){
+			if(idif.length>1){
+				return true;
+			}else{
+				return false;
+			}
+		};
+		
+		
+		
+		/* e-mail,phone */
+		
+		email.addEventListener("blur", function(){
+		var emailInfo = this.value;
+		var emaiC = emaiCh(emailInfo);
+		
+		if(emaiC){
+			alert("OK");
+		}else{
+			alert("이메일은 두글자 이상입니다.");
+		}
+	});
+	
+	
+	function emaiCh(emailInfo){
+		if(emailInfo.length>1){
+			return true;
+		}else{
+			return false;
+		}
+	};
+	///////////////////////////////////////////
+	
+	ph.addEventListener("blur", function(){
+		var phInfo = this.value;
+		var phC = phCh(phInfo);
+		
+		if(phC){
+			alert("OK");
+		}else{
+			alert("전화번호는 두자리 이상입니다.");
+		}
+	});
+	
+	
+	function phCh(phInfo){
+		if(phInfo.length>1){
+			return true;
+		}else{
+			return false;
+		}
+	};
+	
+	
+		
+		
+		
+	/* 	pw */
 		pw1.addEventListener("blur", function() {
 			var info = this.value;
 			var ch = check(info);
@@ -43,7 +114,8 @@
 			}else{
 				return false;
 			}
-		}
+		};
+		
 		
 		/* pw 재확인 스크립트 */
 		
@@ -65,7 +137,7 @@
 		});
 		
 		}
-
+		
 		</script>
 		
 		
@@ -101,6 +173,14 @@
 		</div>
 
 	</header>
+	
+	
+	
+	
+	
+	
+	
+	
 
 	<!--section-->
 
@@ -108,10 +188,6 @@
 		<div class="img">
 			<a href="#"><img alt="macMain" src="/Html_ex2/images/store.jpg"></a>
 		</div>
-
-
-
-
 
 
 		<div class="account_form">
@@ -129,8 +205,8 @@
 			<div class="account_form2">
 				<div>
 					<h3>ID</h3>
-					<input type="text" class="ac_box"> <input type="button"
-						id="ac_bt" value="Duplicate">
+					<input type="text" class="ac_box" id="id"> 
+					<input type="button" id="ac_bt" value="Duplicate">
 				</div>
 				<br>
 
@@ -160,13 +236,13 @@
 
 				<div>
 					<h3>E-mail</h3>
-					<input type="text" class="ac_box">
+					<input type="text" class="ac_box" id="email">
 				</div>
 				<br>
 
 				<div>
 					<h3>PHONE</h3>
-					<input type="text" class="ac_box">
+					<input type="text" class="ac_box" id="ph">
 				</div>
 				<br>
 
@@ -178,7 +254,7 @@
 					</select>
 				</div>
 			</div>
-			<br> <br>
+			<br> <br><br><br>
 			<hr>
 
 			<div id="ac_ok">
